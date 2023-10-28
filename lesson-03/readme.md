@@ -22,10 +22,10 @@ To use the `getDuration` function:
 const durationInSeconds = getDuration("1D2H3M4S");
 console.log(durationInSeconds);  // Outputs: 93784
 
-## Parameters
+##Parameters
 - **duration (String)**: An ISO 8601 duration format string.
 
-## Returns
+##Returns
 - **Integer**: Total duration in seconds.
 
 ## Testing
