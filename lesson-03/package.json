@@ -1,0 +1,15 @@
+{
+  "name": "lesson-03",
+  "version": "1.0.0",
+  "description": "The `getDuration` function is designed to convert an ISO 8601 duration format string into its total seconds representation. This documentation covers the function's purpose, usage, testing, and design choices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
+  }
+}
