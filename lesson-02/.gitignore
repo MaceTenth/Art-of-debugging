@@ -1,0 +1,27 @@
+# Log files
+*.log
+
+# Directory used by built-in Python HTTP server
+__pycache__/
+
+# Directories used by many package managers and build tools
+node_modules/
+bower_components/
+dist/
+
+# IDE/Editor specific files
+*.swp
+*.swo
+*.swn
+*.idea/
+*.vscode/
+*.DS_Store
+
+# Operating system generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
