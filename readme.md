@@ -14,7 +14,7 @@ This project is a series of lessons designed to teach best practices in web deve
    - Branch: `lesson-01`
    - Focus: Learn techniques to write code that's less prone to errors.
 
-2. **[How to Test](https://github.com/your-repo-name/tree/lesson-02)**
+2. **[How to Test](https://github.com/MaceTenth/Art-of-debugging/tree/testing/lesson-02)**
    - Branch: `lesson-02`
    - Focus: Understand the importance of testing and how to implement basic tests for your code.
 
