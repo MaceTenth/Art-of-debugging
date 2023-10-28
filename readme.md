@@ -38,11 +38,11 @@ This project is a series of lessons designed to teach best practices in web deve
 
 1. **Clone the Repository**:
    ```bash
-   git clone [Your Repository URL]
+   git clone https://github.com/MaceTenth/Art-of-debugging.git
 
 ## How to Use
 
 ### Navigate to a Lesson
-To switch to a lesson, use the `git checkout` command followed by the branch name. For example:
+To switch to a lesson, use the `git checkout` command followed by the branch name. For example to view lesson 2 - How to test:
 ```bash
-git checkout lesson-01
+git checkout lesson-02
