@@ -19,13 +19,14 @@ The main purpose of the `getDuration` function is to provide a standardized way 
 To use the `getDuration` function:
 
 ```javascript
-const durationInSeconds = getDuration("1D2H3M4S");
+const durationInSeconds = getDuration(document.querySelector("time").content);
 console.log(durationInSeconds);  // Outputs: 93784
+``` 
 
-##Parameters
+## Parameters
 - **duration (String)**: An ISO 8601 duration format string.
 
-##Returns
+## Returns
 - **Integer**: Total duration in seconds.
 
 ## Testing
@@ -35,6 +36,7 @@ We use Jest as our testing framework. The tests ensure:
 - Handling of non-string inputs.
 
 To run the tests:
-```bash
+
+bash
 npm test
 
