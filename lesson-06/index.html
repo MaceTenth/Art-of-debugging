@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Bug Reproduction</title>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<label>
+    <input type="checkbox" id="triggerCheckbox"> I accept terms and conditions
+</label>
+
+<select id="conditionSelect">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+
+<button id="openModalBtn">Open Modal</button>
+
+<div class="modal" id="myModal">
+    Your request has been accepted
+    <button id="closeModalBtn">Close Modal</button>
+</div>
+
+<script>
+    const modal = document.getElementById('myModal');
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const conditionSelect = document.getElementById('conditionSelect');
+    const triggerCheckbox = document.getElementById('triggerCheckbox');
+
+    openModalBtn.addEventListener('click', function() {
+        if (triggerCheckbox.checked && conditionSelect.value === 'female') {
+           
+            return;
+        }
+        modal.style.display = 'block';
+    });
+
+    closeModalBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
