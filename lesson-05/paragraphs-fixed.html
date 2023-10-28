@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debugger Example</title>
+  </head>
+  <body>
+    <p id="para1">Hello! This is paragraph 1. @#*$</p>
+    <p id="para2">Welcome to paragraph 2. &^%</p>
+    <p id="para3">Lastly, this is paragraph 3. )(!</p>
+
+    <button onclick="removeNonLetterCharacters()">
+      Remove ASCII Characters
+    </button>
+
+    <script>
+      function removeNonLetterCharacters() {
+        const paragraphs = document.querySelectorAll("p");
+
+        for (let para of paragraphs) {
+          // Add the debugger statement
+          debugger;
+
+          // Replace all non-letter ASCII characters
+          para.textContent = para.textContent.replace(/[^a-zA-Z\s]/g, "");
+        }
+      }
+    </script>
+  </body>
+</html>

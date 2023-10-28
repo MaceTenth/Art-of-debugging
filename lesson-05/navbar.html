@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Example</title>
+    <style>
+        .navbar {
+            display: flex;
+            padding: 10px;
+            background-color: #333;
+        }
+        .navbar-item {
+            margin-right: 20px;
+            padding: 10px;
+            color: white;
+            background-color: #555;
+        }
+        /* Intentional bug: this will hide the 3rd navbar item */
+        .navbar-item:nth-child(3) {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-item">Item 1</div>
+        <div class="navbar-item">Item 2</div>
+        <div class="navbar-item">Item 3</div>
+        <div class="navbar-item">Item 4</div>
+    </div>
+</body>
+</html>
