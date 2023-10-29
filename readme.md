@@ -34,7 +34,7 @@ This project is a series of lessons designed to teach best practices in web deve
    - Branch: `lesson-06`
    - Focus: Understand the process of bug reproduction and how to isolate issues effectively.
 
-7. **[Learning, Adapting, and Improving](https://github.com/MaceTenth/Art-of-debugging/tree/improving/lesson-07)**
+7. **[Learning, Adapting, and Improving](https://github.com/MaceTenth/Art-of-debugging/tree/feedback/lesson-07)**
    - Branch: `lesson-07`
    - Focus: Delve into the art of iterative development. Understand how to analyze past mistakes, continuously improve your codebase, and leverage previous knowledge to prevent future bugs.
 
