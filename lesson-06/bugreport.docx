@@ -1,0 +1,34 @@
+Bug Report
+Issue: Modal does not open under specific conditions.
+
+Description:
+When a user checks the "I accept terms and conditions" checkbox and selects "Female" from the dropdown, the modal does not open upon clicking the "Open Modal" button.
+
+Impact:
+This bug prevents a specific segment of users (those who have selected "Female" and accepted the terms and conditions) from receiving the confirmation message in the modal. This may lead to confusion, reduced trust in the website, or potential loss of users who might think the application is not working correctly.
+
+Reported by:
+Client
+
+Developer's Possible Intention:
+The developer might have intended to implement a different user flow or show a different message for users who select "Female" and accept the terms and conditions. The current code seems to stop the modal from appearing for these users, which might be a partially implemented or forgotten feature.
+
+Root Cause:
+Upon reviewing the code, the root cause of the issue is identified in the event listener attached to the openModalBtn. The condition inside the listener checks if the triggerCheckbox is checked and the conditionSelect value is "female". If both are true, the function returns prematurely, preventing the modal from displaying.
+
+openModalBtn.addEventListener('click', function() {
+    if (triggerCheckbox.checked && conditionSelect.value === 'female') {
+        return;
+    }
+    modal.style.display = 'block';
+});
+
+
+Recommendations for Prevention:
+Code Review: All features, especially those that involve conditional logic, should undergo thorough code reviews. Peer reviews can help in catching such logical errors before they reach the production environment.
+Testing: Automated and manual tests should be conducted for all user flows. In this case, testing the combination of checkbox and dropdown selections would have identified the issue.
+User Feedback Loop: Implement mechanisms for users to easily report issues they face. Quick feedback can help in early detection and resolution of problems.
+Clear Requirements: Ensure that requirements are clear and well-understood by the development team. In cases where conditional logic is applied, the requirements should explicitly state the expected behavior for all scenarios.
+Resolution:
+To resolve this specific issue, the conditional check that prevents the modal from opening for female users who have accepted the terms and conditions needs to be removed or modified to match the intended behavior.
+
