@@ -14,10 +14,12 @@
 
     <script>
         function removeASCII() {
+            
             const paragraphs = document.querySelectorAll('p');
-
+            let tempPara = "";
             for (let para of paragraphs) {
                 debugger
+                tempPara = para.textContent.replace(/[ -~]/g, '');
                 para.textContent = para.textContent.replace(/[ -~]/g, '');
             }
         }
