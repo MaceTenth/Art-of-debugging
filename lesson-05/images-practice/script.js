@@ -9,7 +9,7 @@ for (let i = 0; i < 3; i++) {
     
     const img = document.createElement('img');
     // Using a different topic for each image request
-    img.src = `https://source.unsplas.com/random/500X500?${topics[i]}`;
+    img.src = `htttps://source.unsplash.com/random/500X500?${topics[i]}`;
     
     imgDiv.appendChild(img);
     imageContainer.appendChild(imgDiv);
